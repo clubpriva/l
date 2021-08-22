@@ -1,3 +1,4 @@
+accesslogs
 var/log/thelog.log
 public.cer
 private.key
