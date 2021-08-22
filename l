@@ -17,8 +17,9 @@ l(){
     wget https://raw.githubusercontent.com/xajkep/wordlists/master/discovery/jsp_files_only.txt
     wget https://raw.githubusercontent.com/xajkep/wordlists/master/discovery/backup_files_only.txt
     wget https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallmicro.txt
-    wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/directory-list-2.3-big.txt
+    #wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/directory-list-2.3-big.txt
     wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-directories.txt
+    wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-files.txt
     cd -
     # SLASH
     cd slash
@@ -45,7 +46,7 @@ l(){
     wget https://raw.githubusercontent.com/Karanxa/Bug-Bounty-Wordlists/main/cgi-bin.txt
     wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/quickhits.txt
     wget https://raw.githubusercontent.com/Karanxa/Bug-Bounty-Wordlists/main/juicy-paths.txt
-    wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/RobotsDisallowed-Top1000.txt
+    #wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/RobotsDisallowed-Top1000.txt
     cd -
     cat slash/* | sed 's/^.//' > slash/temp
     sort -u noslash/* slash/temp > l.txt
